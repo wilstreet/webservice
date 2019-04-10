@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    
+  </div>
+  <div class="ion-no-padding" *ngIf="paises">
+    <ion-card *ngFor="let item of paises">
+       <ion-card-header>
+       
+         <ion-card-title>{{item.name}}</ion-card-title> 
+        
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-img src="{{ item.flag}}"></ion-img>
+        <p>{{item.capital}} {{item.population}} {{item.maps}} </p>
+      </ion-card-content>
+      
+    </ion-card>
+  </div>
+</ion-content>
